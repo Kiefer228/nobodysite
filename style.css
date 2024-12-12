@@ -35,15 +35,15 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 6.5rem; /* Noticeably larger title */
+  font-size: 8rem; /* Dramatically larger title */
   text-transform: uppercase; /* All-caps for drama */
   color: rgb(255, 50, 50); /* Light Red */
   margin: 0;
 }
 
 header p {
-  font-size: 2rem; /* Noticeably larger subtitle */
-  color: #ccc; /* Subtle secondary text */
+  font-size: 2rem; /* Subtitle remains unchanged */
+  color: #ccc; /* Soft white text */
   max-width: 600px;
   margin: 20px auto 0;
 }
@@ -51,19 +51,18 @@ header p {
 /* Scroll Hint */
 .scroll-hint {
   position: absolute;
-  bottom: 50px; /* Moved higher up */
+  bottom: 70px; /* Moved higher for better visibility */
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 25px solid rgb(255, 50, 50); /* Larger triangle */
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid rgb(255, 50, 50); /* Larger triangle */
   opacity: 0.8;
   animation: bounce 2s infinite ease-in-out;
 }
 
-/* Scroll Hint Animation */
 @keyframes bounce {
   0%, 100% {
     transform: translateX(-50%) translateY(0);
@@ -73,22 +72,31 @@ header p {
   }
 }
 
-/* Main Grid Layout */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+/* Inverted Color Scheme for Main Content */
+main {
+  background-color: rgb(255, 50, 50); /* Bright Red Background */
   padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  color: #fff; /* Whiteish text */
 }
 
+main h2 {
+  color: #fff; /* Bright white text for titles */
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+main p {
+  color: rgb(20, 20, 20); /* Dark gray text for descriptions */
+  font-size: 1.3rem;
+}
+
+/* Cards */
 .card {
-  position: relative;
-  overflow: hidden;
-  border: 2px solid rgb(255, 50, 50); /* Light red border */
-  background-color: rgb(30, 30, 30); /* Slightly lighter gray */
-  padding: 40px; /* Increased padding for better spacing */
+  background-color: #fff; /* White card background */
+  color: rgb(20, 20, 20); /* Dark gray text */
+  border: 2px solid rgb(20, 20, 20); /* Dark gray border */
+  padding: 40px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
@@ -100,30 +108,26 @@ header p {
 }
 
 .card h2 {
-  font-size: 2.5rem; /* Larger card titles */
-  text-transform: uppercase; /* All-caps for emphasis */
-  color: rgb(255, 50, 50); /* Light Red */
+  color: rgb(20, 20, 20); /* Dark gray title text */
   margin-bottom: 10px;
 }
 
 .card p {
-  font-size: 1.3rem; /* Larger card descriptions */
-  color: #ccc; /* Subtle description text */
-  margin: 0;
+  color: rgb(20, 20, 20); /* Dark gray description text */
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 40px;
-  background-color: rgb(20, 20, 20); /* Match header */
-  color: #fff;
+  background-color: rgb(255, 50, 50); /* Match inverted background */
+  color: #fff; /* White text */
   font-size: 1.2rem; /* Slightly larger footer text */
   letter-spacing: 1px;
 }
 
 footer a {
-  color: rgb(255, 50, 50); /* Light red links */
+  color: #fff; /* White links */
   text-decoration: none;
   font-weight: bold;
 }
@@ -138,7 +142,7 @@ footer .social-links {
 }
 
 footer .social-links a {
-  color: rgb(255, 50, 50); /* Light red */
+  color: #fff; /* White links */
   text-decoration: none;
   font-weight: bold;
   margin: 0 5px;
