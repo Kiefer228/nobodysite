@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'League Spartan', sans-serif; /* Modern, bold font */
+  font-family: 'League Spartan', sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(20, 20, 20); /* Dark Gray Background */
@@ -27,6 +27,7 @@ header {
   height: 100vh;
   background-color: rgb(20, 20, 20); /* Solid Dark Gray */
   text-align: center;
+  position: relative; /* Needed for positioning the scroll hint */
 }
 
 header .header-content {
@@ -34,17 +35,42 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 5rem; /* Large, bold header */
+  font-size: 5.5rem; /* Slightly increased size */
   text-transform: uppercase; /* All-caps for drama */
   color: rgb(255, 50, 50); /* Light Red */
   margin: 0;
 }
 
 header p {
-  font-size: 1.5rem;
+  font-size: 1.7rem; /* Slightly increased size */
   color: #ccc; /* Subtle secondary text */
   max-width: 600px;
   margin: 20px auto 0;
+}
+
+/* Scroll Hint */
+.scroll-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid rgb(255, 50, 50); /* Light Red */
+  opacity: 0.7;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+/* Scroll Hint Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 /* Main Grid Layout */
