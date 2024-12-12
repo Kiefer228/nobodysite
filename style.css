@@ -98,6 +98,8 @@ main p {
   border: 2px solid rgb(255, 50, 50); /* Red border for contrast */
   padding: 30px; /* Adjusted padding to fix oversized buttons */
   text-align: center;
+  max-width: 400px; /* Explicit max-width to avoid huge buttons */
+  margin: 20px auto; /* Centered margin for all cards */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
 }
@@ -125,6 +127,7 @@ main p {
   border: 2px solid rgb(255, 50, 50); /* Red border */
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 10px; /* Space between button and text */
   transition: background 0.3s ease, color 0.3s ease;
 }
 
