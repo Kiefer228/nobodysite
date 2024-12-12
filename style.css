@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', sans-serif; /* Modern, bold font */
   margin: 0;
   padding: 0;
   background-color: rgb(20, 20, 20); /* Dark Gray Background */
@@ -35,7 +35,7 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 16rem; /* Dramatically larger title */
+  font-size: 16rem; /* Dramatically larger title text */
   text-transform: uppercase; /* All-caps for drama */
   color: rgb(255, 50, 50); /* Light Red */
   margin: 0;
@@ -103,6 +103,20 @@ header p {
   background-color: rgb(30, 30, 30); /* Slightly lighter gray on hover */
 }
 
+/* Card Title */
+.card h2 {
+  font-size: 2.5rem; /* Larger title font size */
+  color: #fff; /* White title text */
+  margin-bottom: 10px;
+}
+
+/* Card Description */
+.card p {
+  font-size: 1.3rem; /* Larger description font size */
+  color: #ccc; /* Soft white text for description */
+  margin: 0;
+}
+
 /* Flex Container for Buttons on Other Pages */
 .buttons-container {
   display: flex; /* Use flexbox for horizontal alignment */
@@ -125,4 +139,40 @@ header p {
 .buttons-container .button:hover {
   background-color: #fff; /* White background on hover */
   color: rgb(20, 20, 20); /* Dark gray text on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(255, 50, 50); /* Match inverted background */
+  color: #fff; /* White text */
+  font-size: 1.2rem; /* Slightly larger footer text */
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #fff; /* White links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Social Links */
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: #fff; /* White links */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline; /* Underline links on hover */
 }
