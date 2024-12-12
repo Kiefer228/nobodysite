@@ -42,7 +42,6 @@ header h1 {
   margin: 40px 0; /* Add spacing */
   overflow-wrap: break-word; /* Prevent unnecessary word breaks */
   word-break: break-word; /* Avoid breaking mid-word */
-  text-shadow: 0 0 1px rgb(255, 50, 50), 0 0 5px rgb(255, 50, 50); 
 }
 
 header p {
@@ -137,7 +136,7 @@ header p {
 .buttons-container .button:hover {
   transform: scale(1.05); /* Slight scale on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Subtle glow */
-  background-color: #fff;
+  background-color: #20,20,20;
   color: rgb(20, 20, 20);
 }
 
