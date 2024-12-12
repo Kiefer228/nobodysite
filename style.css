@@ -61,7 +61,7 @@ header p {
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 40px solid rgb(255, 255, 255); /* White Triangle */
+  border-top: 40px solid rgb(255, 50, 50); /* Red Triangle */
   opacity: 0.8;
   animation: bounce 2s infinite ease-in-out;
 }
