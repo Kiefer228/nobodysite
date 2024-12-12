@@ -54,7 +54,7 @@ header p {
 /* Scroll Hint */
 .scroll-hint {
   position: absolute;
-  bottom: 30px; /* Adjusted for visibility */
+  bottom: 60px; /* Adjusted for visibility */
   left: 50%;
   transform: translateX(-50%);
   width: 0;
@@ -93,7 +93,7 @@ header p {
   background-color: rgb(20, 20, 20); /* Dark Gray Card Background */
   color: #fff; /* White Text */
   text-decoration: none;
-  border: 2px solid rgb(255, 50, 50); /* Red Border */
+  border: 2px solid rgb(20, 20, 20); /* Dark Gray Border */
   padding: 40px 60px; /* Increased padding for consistency */
   margin: 0 auto; /* Ensure proper centering */
   max-width: 500px; /* Consistent width */
