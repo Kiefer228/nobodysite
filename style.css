@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', sans-serif; /* Modern, bold font */
   margin: 0;
   padding: 0;
   background-color: rgb(20, 20, 20); /* Dark Gray Background */
@@ -35,14 +35,14 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 5.5rem; /* Slightly increased size */
+  font-size: 6.5rem; /* Noticeably larger title */
   text-transform: uppercase; /* All-caps for drama */
   color: rgb(255, 50, 50); /* Light Red */
   margin: 0;
 }
 
 header p {
-  font-size: 1.7rem; /* Slightly increased size */
+  font-size: 2rem; /* Noticeably larger subtitle */
   color: #ccc; /* Subtle secondary text */
   max-width: 600px;
   margin: 20px auto 0;
@@ -51,15 +51,15 @@ header p {
 /* Scroll Hint */
 .scroll-hint {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px; /* Moved higher up */
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 20px solid rgb(255, 50, 50); /* Light Red */
-  opacity: 0.7;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid rgb(255, 50, 50); /* Larger triangle */
+  opacity: 0.8;
   animation: bounce 2s infinite ease-in-out;
 }
 
@@ -69,7 +69,7 @@ header p {
     transform: translateX(-50%) translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(10px);
+    transform: translateX(-50%) translateY(15px);
   }
 }
 
@@ -88,7 +88,7 @@ header p {
   overflow: hidden;
   border: 2px solid rgb(255, 50, 50); /* Light red border */
   background-color: rgb(30, 30, 30); /* Slightly lighter gray */
-  padding: 30px;
+  padding: 40px; /* Increased padding for better spacing */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
@@ -100,14 +100,14 @@ header p {
 }
 
 .card h2 {
-  font-size: 2rem;
-  text-transform: uppercase; /* All-caps for character names */
+  font-size: 2.5rem; /* Larger card titles */
+  text-transform: uppercase; /* All-caps for emphasis */
   color: rgb(255, 50, 50); /* Light Red */
   margin-bottom: 10px;
 }
 
 .card p {
-  font-size: 1.1rem;
+  font-size: 1.3rem; /* Larger card descriptions */
   color: #ccc; /* Subtle description text */
   margin: 0;
 }
@@ -118,7 +118,7 @@ footer {
   padding: 40px;
   background-color: rgb(20, 20, 20); /* Match header */
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem; /* Slightly larger footer text */
   letter-spacing: 1px;
 }
 
