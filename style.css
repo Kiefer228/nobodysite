@@ -35,11 +35,11 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 20rem; /* Reduced size for better fit */
+  font-size: 16rem; /* Reduced size for better fit */
   text-transform: uppercase; /* All-caps for drama */
   color: rgb(255, 50, 50); /* Light Red */
-  margin: 40px 0; /* Center title visually */
-  max-width: 90%; /* Prevent overflow */
+  margin: 20px 0; /* Center title visually */
+  max-width: 95%; /* Prevent overflow */
   word-break: break-word; /* Break long words if necessary */
 }
 
