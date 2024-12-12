@@ -135,9 +135,8 @@ header p {
 
 .buttons-container .button:hover {
   transform: scale(1.05); /* Slight scale on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Subtle glow */
   background-color: #20,20,20;
-  color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
 }
 
 /* Footer */
