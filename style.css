@@ -36,19 +36,18 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 12rem; /* Doubled title size */
+  font-size: 16rem; /* Increased title size */
   text-transform: uppercase; /* All-caps for drama */
   color: #fff; /* White Title Text */
   margin: 40px 0; /* Add spacing */
-  max-width: 90%; /* Prevent overflow */
-  overflow-wrap: normal; /* Relaxed word wrapping */
-  word-break: normal; /* Avoid unnecessary breaks */
+  overflow-wrap: break-word; /* Prevent unnecessary word breaks */
+  word-break: break-word; /* Avoid breaking mid-word */
 }
 
 header p {
-  font-size: 2rem; /* Subtitle remains consistent */
+  font-size: 2.5rem; /* Subtitle slightly larger for balance */
   color: #fff; /* White text to match red background */
-  max-width: 600px;
+  max-width: 800px; /* Allow longer subtitle */
   margin: 20px auto 0;
 }
 
@@ -80,8 +79,8 @@ header p {
 .grid-container {
   display: grid; /* Grid layout for buttons */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid sizing */
-  gap: 40px; /* Space between buttons */
-  padding: 40px 20px;
+  gap: 60px; /* Increased space between buttons */
+  padding: 60px 20px; /* Add more padding around */
   max-width: 1200px; /* Center alignment */
   margin: 0 auto; /* Proper centering */
 }
@@ -93,8 +92,8 @@ header p {
   color: #fff; /* White Text */
   text-decoration: none;
   border: 2px solid rgb(255, 50, 50); /* Red Border */
-  padding: 30px 50px;
-  margin: 20px auto; /* Proper margin for spacing */
+  padding: 40px 60px; /* Increased padding for consistency */
+  margin: 0 auto; /* Ensure proper centering */
   max-width: 500px; /* Consistent width */
   text-align: center; /* Center text */
   position: relative;
@@ -127,13 +126,13 @@ header p {
 .buttons-container {
   display: flex; /* Horizontal alignment */
   justify-content: center;
-  gap: 20px;
-  padding: 40px 20px;
+  gap: 40px; /* Increased gap between buttons */
+  padding: 60px 20px; /* Add more padding */
 }
 
 .buttons-container .button {
   display: inline-block;
-  padding: 30px 50px;
+  padding: 40px 60px; /* Increased padding for consistency */
   background-color: rgb(20, 20, 20); /* Dark Gray Background */
   color: #fff;
   border: 2px solid rgb(255, 50, 50);
