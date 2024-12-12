@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'League Spartan', sans-serif; /* Modern, bold font */
+  font-family: 'League Spartan', sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(20, 20, 20); /* Dark Gray Background */
@@ -93,10 +93,10 @@ main p {
 
 /* Cards */
 .card {
-  background-color: #fff; /* White card background */
-  color: rgb(20, 20, 20); /* Dark gray text */
-  border: 2px solid rgb(20, 20, 20); /* Dark gray border */
-  padding: 40px;
+  background-color: rgb(20, 20, 20); /* Dark gray card background */
+  color: #ccc; /* Soft white text for card content */
+  border: 2px solid rgb(255, 50, 50); /* Red border for contrast */
+  padding: 30px; /* Adjusted padding to fix oversized buttons */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
@@ -108,12 +108,29 @@ main p {
 }
 
 .card h2 {
-  color: rgb(20, 20, 20); /* Dark gray title text */
+  color: #fff; /* Bright white title text */
   margin-bottom: 10px;
 }
 
 .card p {
-  color: rgb(20, 20, 20); /* Dark gray description text */
+  color: #ccc; /* Subtle soft white text */
+}
+
+/* Buttons within Cards */
+.card .button {
+  display: inline-block;
+  padding: 10px 20px; /* Smaller padding for buttons */
+  background-color: rgb(20, 20, 20); /* Dark gray button background */
+  color: #fff; /* White text */
+  border: 2px solid rgb(255, 50, 50); /* Red border */
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card .button:hover {
+  background-color: #fff; /* White background on hover */
+  color: rgb(20, 20, 20); /* Dark gray text on hover */
 }
 
 /* Footer */
