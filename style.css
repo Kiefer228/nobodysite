@@ -35,7 +35,7 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 8rem; /* Dramatically larger title */
+  font-size: 16rem; /* Dramatically larger title */
   text-transform: uppercase; /* All-caps for drama */
   color: rgb(255, 50, 50); /* Light Red */
   margin: 0;
