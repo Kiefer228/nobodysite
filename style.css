@@ -72,102 +72,57 @@ header p {
   }
 }
 
-/* Inverted Color Scheme for Main Content */
-main {
-  background-color: rgb(255, 50, 50); /* Bright Red Background */
+/* Home Page Grid Container */
+.grid-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible card sizing */
+  gap: 40px; /* Space between cards */
   padding: 40px 20px;
-  color: #fff; /* Whiteish text */
-}
-
-main h2 {
-  color: #fff; /* Bright white text for titles */
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-main p {
-  color: rgb(20, 20, 20); /* Dark gray text for descriptions */
-  font-size: 1.3rem;
+  max-width: 1200px; /* Limit width for alignment */
+  margin: 0 auto; /* Center the grid */
 }
 
 /* Cards */
 .card {
-  background-color: rgb(20, 20, 20); /* Dark gray card background */
-  color: #ccc; /* Soft white text for card content */
+  display: block; /* Ensure the entire card is clickable */
+  background-color: rgb(20, 20, 20); /* Dark gray background */
+  color: #fff; /* White text for the card */
+  text-decoration: none; /* Remove default link underline */
   border: 2px solid rgb(255, 50, 50); /* Red border for contrast */
-  padding: 30px; /* Adjusted padding to fix oversized buttons */
-  text-align: center;
-  max-width: 400px; /* Explicit max-width to avoid huge buttons */
-  margin: 20px auto; /* Centered margin for all cards */
+  padding: 30px; /* Consistent padding for the card */
+  margin: 20px auto; /* Center the card with space around it */
+  max-width: 400px; /* Set a maximum width for the card */
+  text-align: center; /* Center-align the text */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+  background-color: rgb(30, 30, 30); /* Slightly lighter gray on hover */
 }
 
-.card h2 {
-  color: #fff; /* Bright white title text */
-  margin-bottom: 10px;
+/* Flex Container for Buttons on Other Pages */
+.buttons-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  padding: 40px 20px;
 }
 
-.card p {
-  color: #ccc; /* Subtle soft white text */
-}
-
-/* Buttons within Cards */
-.card .button {
+.buttons-container .button {
   display: inline-block;
-  padding: 10px 20px; /* Smaller padding for buttons */
+  padding: 15px 30px; /* Adjust padding for size */
   background-color: rgb(20, 20, 20); /* Dark gray button background */
   color: #fff; /* White text */
   border: 2px solid rgb(255, 50, 50); /* Red border */
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 10px; /* Space between button and text */
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.card .button:hover {
+.buttons-container .button:hover {
   background-color: #fff; /* White background on hover */
   color: rgb(20, 20, 20); /* Dark gray text on hover */
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 40px;
-  background-color: rgb(255, 50, 50); /* Match inverted background */
-  color: #fff; /* White text */
-  font-size: 1.2rem; /* Slightly larger footer text */
-  letter-spacing: 1px;
-}
-
-footer a {
-  color: #fff; /* White links */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Footer Social Links */
-footer .social-links {
-  margin-top: 10px;
-}
-
-footer .social-links a {
-  color: #fff; /* White links */
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 5px;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline; /* Underline links on hover */
 }
