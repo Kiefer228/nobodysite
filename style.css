@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: 'League Spartan', sans-serif; /* Modern, bold font */
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 20, 20); /* Dark Gray Background */
+  color: #fff; /* White Text */
+  line-height: 1.5;
+  overflow-x: hidden; /* Prevent scrolling issues */
+}
+
+/* Links */
+a {
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Inherit text color */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline only on hover */
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(20, 20, 20); /* Solid Dark Gray */
+  text-align: center;
+}
+
+header .header-content {
+  position: relative;
+}
+
+header h1 {
+  font-size: 5rem; /* Large, bold header */
+  text-transform: uppercase; /* All-caps for drama */
+  color: rgb(255, 50, 50); /* Light Red */
+  margin: 0;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #ccc; /* Subtle secondary text */
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+/* Main Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(255, 50, 50); /* Light red border */
+  background-color: rgb(30, 30, 30); /* Slightly lighter gray */
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Enhanced shadow on hover */
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-transform: uppercase; /* All-caps for character names */
+  color: rgb(255, 50, 50); /* Light Red */
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #ccc; /* Subtle description text */
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  background-color: rgb(20, 20, 20); /* Match header */
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: rgb(255, 50, 50); /* Light red links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Social Links */
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: rgb(255, 50, 50); /* Light red */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
