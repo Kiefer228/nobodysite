@@ -42,7 +42,7 @@ header h1 {
   margin: 40px 0; /* Add spacing */
   overflow-wrap: break-word; /* Prevent unnecessary word breaks */
   word-break: break-word; /* Avoid breaking mid-word */
-  text-shadow: 0 0 15px rgb(255, 50, 50), 0 0 30px rgb(255, 50, 50), 0 0 45px rgb(255, 50, 50);
+  text-shadow: 0 0 5px rgb(255, 50, 50), 0 0 10px rgb(255, 50, 50); /* Subtle title glow */
 }
 
 header p {
@@ -50,26 +50,6 @@ header p {
   color: #fff; /* White Subtitle Text */
   max-width: 800px; /* Allow longer subtitle */
   margin: 20px auto 0;
-}
-
-/* Animated Divider */
-header::after {
-  content: '';
-  display: block;
-  width: 80%;
-  height: 4px;
-  margin: 30px auto 0;
-  background: linear-gradient(90deg, transparent, rgb(255, 50, 50), transparent);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
 }
 
 /* Scroll Hint */
