@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'League Spartan', sans-serif; /* Modern, bold font */
+  font-family: 'League Spartan', sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(20, 20, 20); /* Dark Gray Background */
@@ -25,9 +25,10 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh; /* Full-page height */
-  background-color: rgb(20, 20, 20); /* Solid Dark Gray */
+  background-color: rgb(255, 50, 50); /* Bright Red Background */
   text-align: center;
-  position: relative; /* Needed for positioning the scroll hint */
+  position: relative;
+  margin: 0; /* Ensure no space above header */
 }
 
 header .header-content {
@@ -35,17 +36,18 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 6rem; /* Large, consistent title size */
+  font-size: 12rem; /* Doubled title size */
   text-transform: uppercase; /* All-caps for drama */
-  color: rgb(255, 50, 50); /* Light Red */
-  margin: 40px 0; /* Add margins for spacing */
+  color: #fff; /* White Title Text */
+  margin: 40px 0; /* Add spacing */
   max-width: 90%; /* Prevent overflow */
-  word-break: break-word; /* Break long words if needed */
+  overflow-wrap: normal; /* Relaxed word wrapping */
+  word-break: normal; /* Avoid unnecessary breaks */
 }
 
 header p {
   font-size: 2rem; /* Subtitle remains consistent */
-  color: #ccc; /* Soft white text */
+  color: #fff; /* White text to match red background */
   max-width: 600px;
   margin: 20px auto 0;
 }
@@ -53,14 +55,14 @@ header p {
 /* Scroll Hint */
 .scroll-hint {
   position: absolute;
-  bottom: 70px;
+  bottom: 30px; /* Adjusted for visibility */
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 40px solid rgb(255, 50, 50); /* Red Triangle */
+  border-top: 40px solid rgb(255, 255, 255); /* White Triangle */
   opacity: 0.8;
   animation: bounce 2s infinite ease-in-out;
 }
@@ -74,34 +76,32 @@ header p {
   }
 }
 
-/* Home Page Grid Container */
+/* Main Grid Container */
 .grid-container {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible card sizing */
-  gap: 40px; /* Space between cards */
+  display: grid; /* Grid layout for buttons */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid sizing */
+  gap: 40px; /* Space between buttons */
   padding: 40px 20px;
-  max-width: 1200px; /* Limit width for alignment */
-  margin: 0 auto; /* Center the grid */
+  max-width: 1200px; /* Center alignment */
+  margin: 0 auto; /* Proper centering */
 }
 
 /* Cards */
 .card {
-  display: block; /* Ensure the entire card is clickable */
+  display: block;
   background-color: rgb(20, 20, 20); /* Dark Gray Background */
-  color: #fff; /* White text for the card */
-  text-decoration: none; /* Remove default link underline */
+  color: #fff; /* White Text */
+  text-decoration: none;
   border: 2px solid rgb(255, 50, 50); /* Red Border */
-  padding: 30px 50px; /* Wider padding for consistent button sizes */
-  margin: 20px auto; /* Center the card with space around it */
-  width: 100%; /* Full width */
-  max-width: 500px; /* Set a maximum width for the card */
-  text-align: center; /* Center-align the text */
-  position: relative; /* Allow for background image placement */
+  padding: 30px 50px;
+  margin: 20px auto; /* Proper margin for spacing */
+  max-width: 500px; /* Consistent width */
+  text-align: center; /* Center text */
+  position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Background Image Placeholder for Cards */
 .card::before {
   content: '';
   position: absolute;
@@ -112,72 +112,41 @@ header p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.5; /* 50% Opacity for image */
-  pointer-events: none; /* Allow clicks to pass through */
-  z-index: -1; /* Place behind card content */
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Slight lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
-  background-color: rgb(30, 30, 30); /* Slightly lighter gray on hover */
-}
-
-/* Card Title */
-.card h2 {
-  font-size: 2.5rem; /* Large title size */
-  color: #fff; /* White title text */
-  margin-bottom: 10px;
-}
-
-/* Card Description */
-.card p {
-  font-size: 1.3rem; /* Description text size */
-  color: #ccc; /* Soft white text */
-  margin: 0;
-  min-height: 1.5em; /* Consistent height even with blank descriptions */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  background-color: rgb(30, 30, 30);
 }
 
 /* Buttons Container for Flex Layout */
 .buttons-container {
-  display: flex; /* Use flexbox for horizontal alignment */
-  justify-content: center; /* Center the buttons */
-  gap: 20px; /* Space between buttons */
+  display: flex; /* Horizontal alignment */
+  justify-content: center;
+  gap: 20px;
   padding: 40px 20px;
 }
 
 .buttons-container .button {
   display: inline-block;
-  padding: 30px 50px; /* Consistent button padding */
-  background-color: rgb(20, 20, 20); /* Dark gray button background */
-  color: #fff; /* White text */
-  border: 2px solid rgb(255, 50, 50); /* Red border */
-  text-transform: uppercase; /* All-caps */
-  font-weight: bold; /* Bold text for emphasis */
+  padding: 30px 50px;
+  background-color: rgb(20, 20, 20); /* Dark Gray Background */
+  color: #fff;
+  border: 2px solid rgb(255, 50, 50);
+  text-transform: uppercase;
+  font-weight: bold;
   text-align: center;
   position: relative;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Background Image Placeholder for Buttons */
-.buttons-container .button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.5; /* 50% Opacity for image */
-  pointer-events: none; /* Allow clicks to pass through */
-  z-index: -1; /* Place behind button content */
-}
-
 .buttons-container .button:hover {
-  background-color: #fff; /* White background on hover */
-  color: rgb(20, 20, 20); /* Dark gray text on hover */
+  background-color: #fff;
+  color: rgb(20, 20, 20);
 }
 
 /* Footer */
@@ -185,33 +154,24 @@ footer {
   text-align: center;
   padding: 40px;
   background-color: rgb(255, 50, 50); /* Red background */
-  color: #fff; /* White text */
-  font-size: 1.2rem; /* Slightly larger footer text */
-  letter-spacing: 1px;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 footer a {
-  color: #fff; /* White links */
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
 footer a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
-/* Footer Social Links */
 footer .social-links {
   margin-top: 10px;
 }
 
 footer .social-links a {
-  color: #fff; /* White links */
-  text-decoration: none;
-  font-weight: bold;
   margin: 0 5px;
-}
-
-footer .social-links a:hover {
-  text-decoration: underline; /* Underline links on hover */
 }
