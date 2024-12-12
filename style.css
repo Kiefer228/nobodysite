@@ -3,7 +3,7 @@ body {
   font-family: 'League Spartan', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(20, 20, 20); /* Dark Gray Background */
+  background-color: rgb(255, 50, 50); /* Red Background for Bottom Half */
   color: #fff; /* White Text */
   line-height: 1.5;
   overflow-x: hidden; /* Prevent scrolling issues */
@@ -25,7 +25,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh; /* Full-page height */
-  background-color: rgb(20, 20, 20); /* Bright Red Background */
+  background-color: rgb(20, 20, 20); /* Dark Gray Background for Top Half */
   text-align: center;
   position: relative;
   margin: 0; /* Ensure no space above header */
@@ -36,9 +36,9 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 16rem; /* Increased title size */
+  font-size: 14rem; /* Large title size */
   text-transform: uppercase; /* All-caps for drama */
-  color: #fff; /* White Title Text */
+  color: rgb(255, 50, 50); /* Red Title Text */
   margin: 40px 0; /* Add spacing */
   overflow-wrap: break-word; /* Prevent unnecessary word breaks */
   word-break: break-word; /* Avoid breaking mid-word */
@@ -46,7 +46,7 @@ header h1 {
 
 header p {
   font-size: 2.5rem; /* Subtitle slightly larger for balance */
-  color: #fff; /* White text to match red background */
+  color: #fff; /* White Subtitle Text */
   max-width: 800px; /* Allow longer subtitle */
   margin: 20px auto 0;
 }
@@ -83,12 +83,14 @@ header p {
   padding: 60px 20px; /* Add more padding around */
   max-width: 1200px; /* Center alignment */
   margin: 0 auto; /* Proper centering */
+  background-color: rgb(255, 50, 50); /* Red Background for Cards Section */
+  color: #fff; /* White Text */
 }
 
 /* Cards */
 .card {
   display: block;
-  background-color: rgb(20, 20, 20); /* Dark Gray Background */
+  background-color: rgb(20, 20, 20); /* Dark Gray Card Background */
   color: #fff; /* White Text */
   text-decoration: none;
   border: 2px solid rgb(255, 50, 50); /* Red Border */
@@ -119,7 +121,7 @@ header p {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-  background-color: rgb(255, 30, 30);
+  background-color: rgb(30, 30, 30);
 }
 
 /* Buttons Container for Flex Layout */
@@ -128,12 +130,13 @@ header p {
   justify-content: center;
   gap: 40px; /* Increased gap between buttons */
   padding: 60px 20px; /* Add more padding */
+  background-color: rgb(255, 50, 50); /* Red Background for Buttons */
 }
 
 .buttons-container .button {
   display: inline-block;
   padding: 40px 60px; /* Increased padding for consistency */
-  background-color: rgb(20, 20, 20); /* Dark Gray Background */
+  background-color: rgb(20, 20, 20); /* Dark Gray Background for Buttons */
   color: #fff;
   border: 2px solid rgb(255, 50, 50);
   text-transform: uppercase;
