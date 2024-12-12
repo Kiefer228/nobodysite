@@ -36,13 +36,13 @@ header .header-content {
 }
 
 header h1 {
-  font-size: 16rem; /* Increased title size */
+  font-size: 14rem; /* Increased title size */
   text-transform: uppercase; /* All-caps for drama */
   color: rgb(255, 50, 50); /* Red Title Text */
   margin: 40px 0; /* Add spacing */
   overflow-wrap: break-word; /* Prevent unnecessary word breaks */
   word-break: break-word; /* Avoid breaking mid-word */
-  text-shadow: 0 0 5px rgb(255, 50, 50), 0 0 10px rgb(255, 50, 50); /* Subtle title glow */
+  text-shadow: 0 0 1px rgb(255, 50, 50), 0 0 5px rgb(255, 50, 50); 
 }
 
 header p {
